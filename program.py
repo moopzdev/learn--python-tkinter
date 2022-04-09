@@ -15,7 +15,7 @@ def open_report():
     myWindow = Tk()
     myWindow.title("Report Log")
     myWindow.geometry("500x800-50+50")
-    s2_label = Label(myWindow, text="Report Log", font=16).pack()``
+    s2_label = Label(myWindow, text="Report Log", font=16).pack()
     myText = Entry(myWindow, textvariable=txt).pack()
 
 
