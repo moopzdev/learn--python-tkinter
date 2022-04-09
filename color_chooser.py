@@ -1,5 +1,7 @@
 from tkinter import *
 from tkinter.colorchooser import *
+from tkinter.dialog import *
+from tkinter.filedialog import askopenfile
 
 # initializing project
 root = Tk()
@@ -14,7 +16,13 @@ def select_color():
     myLabel = Label(text="Hello Python", bg=color[1]).pack()
 
 
+def select_file():
+    fileopen = askopenfile()
+    myLabel = Label(text=fileopen).pack()
+
+
 btn = Button(root, text="Pick a color", command=select_color).pack()
+btn = Button(root, text="Select a file", command=select_file).pack()
 
 # mainloop
 root.mainloop()
